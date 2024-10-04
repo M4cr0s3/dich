@@ -46,27 +46,32 @@
 
 <div class="bg-gradient-to-r from-[#E9E7E4] to-[#FAFBF5] px-12 pt-4">
     <div class="flex justify-between">
-        <div class="flex flex-col justify-between">
+        <div class="flex flex-col justify-between ml-10">
             <nav class="flex flex-col font-medium gap-2">
-                <a href="" class="hover:underline flex items-center text-[#642D90]">
-                    <img src="{{asset("point.png")}}" class="mr-2" alt="point">
-                    Коллекции</a>
-                <a href="" class="hover:underline flex items-center">
-                    <img src="{{asset("point.png")}}" class="opacity-0 mr-2" alt="point">
-                    Гаджеты</a>
-                <a href="" class="hover:underline flex items-center">
-                    <img src="{{asset("point.png")}}" class="opacity-0 mr-2" alt="point">
-                    Одежда</a>
-                <a href="" class="hover:underline flex items-center">
-                    <img src="{{asset("point.png")}}" class="opacity-0 mr-2" alt="point">
-                    Аксессуары</a>
-                <a href="" class="hover:underline flex items-center">
-                    <img src="{{asset("point.png")}}" class="opacity-0 mr-2" alt="point">
-                    Новое</a>
-                <a href="" class="hover:underline flex items-center text-red-500">
-                    <img src="{{asset("point.png")}}" class="opacity-0 mr-2" alt="point">
-                    %
-                    Sale</a>
+                <div class="flex">
+                    <img src="{{asset("point.png")}}" class="mr-2 absolute left-14" alt="point">
+                    <a href="" class="hover:underline flex items-center text-[#642D90]">Коллекции</a>
+                </div>
+                <div class="flex">
+                    <img src="{{asset("point.png")}}" class="mr-2 absolute left-14 hidden" alt="point">
+                    <a href="" class="hover:underline flex items-center">Гаджеты</a>
+                </div>
+                <div class="flex">
+                    <img src="{{asset("point.png")}}" class="mr-2 absolute left-14 hidden" alt="point">
+                    <a href="" class="hover:underline flex items-center">Одежда</a>
+                </div>
+                <div class="flex">
+                    <img src="{{asset("point.png")}}" class="mr-2 absolute left-14 hidden" alt="point">
+                    <a href="" class="hover:underline flex items-center">Аксессуары</a>
+                </div>
+                <div class="flex">
+                    <img src="{{asset("point.png")}}" class="mr-2 absolute left-14 hidden" alt="point">
+                    <a href="" class="hover:underline flex items-center">Новое</a>
+                </div>
+                <div class="flex">
+                    <img src="{{asset("point.png")}}" class="mr-2 absolute left-14 hidden" alt="point">
+                    <a href="" class="hover:underline flex items-center text-red-500">% Sale</a>
+                </div>
             </nav>
             <div class="mb-14">
                 <h2 class="flex flex-col uppercase font-bold text-8xl"><span class="gradient-text">Яркая</span><span class="text-[#7EABFF]">новинка</span></h2>
@@ -81,7 +86,7 @@
                 </div>
             </div>
         </div>
-        <img src="{{asset("slider.png")}}" class="h-full w-full" alt="slide">
+        <img src="{{asset("slider.png")}}" class="w-2/3" alt="slide">
     </div>
 </div>
 
