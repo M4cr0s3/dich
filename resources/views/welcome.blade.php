@@ -43,5 +43,32 @@
     </div>
 </div>
 
+<div class="container max-w-7xl mx-auto">
+    <div class="flex justify-between gap-8">
+        <x-collection-card title="Коллекция 180" image="collection_180.png"/>
+        <x-collection-card title="Коллекция СБЕРкот" image="collection_sbercat.png"/>
+        <x-collection-card title="Коллекция Градиент" image="collection_gradient.png"/>
+    </div>
+
+    <x-section-header icon="star.svg" title="Новые поступления"/>
+
+    <div class="grid grid-cols-3 gap-5 mt-7">
+        <x-entrance-card image="rozetka.png" title="Умная розетка модель SBDV-00123" price="1290"/>
+        <x-entrance-card image="smart_button.png" title="Умная кнопка" price="1590"/>
+        <x-entrance-card image="smart_open.png" title="Умный датчик открытия" price="1590"/>
+        <x-entrance-card image="rozetka.png" title="Умная розетка модель SBDV-00123" price="1290"/>
+        <x-entrance-card image="smart_button.png" title="Умная кнопка" price="1590"/>
+        <x-entrance-card image="smart_open.png" title="Умный датчик открытия" price="1590"/>
+    </div>
+
+    <div class="mt-10">
+        <img src="{{ asset('banner.png') }}" alt="">
+    </div>
+
+    <x-section-header icon="lightning.svg" title="Товар недели"/>
+    <x-weekly-product />
+</div>
+
+
 </body>
 </html>
