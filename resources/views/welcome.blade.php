@@ -90,7 +90,7 @@
     </div>
 </div>
 
-<div class="container max-w-7xl mx-auto">
+<div class="container max-w-7xl mx-auto mt-12">
     <div class="flex justify-between gap-8">
         <x-collection-card title="Коллекция 180" image="collection_180.png"/>
         <x-collection-card title="Коллекция СБЕРкот" image="collection_sbercat.png"/>
