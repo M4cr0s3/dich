@@ -21,7 +21,10 @@
                 Москва и область</a>
             <nav class="flex gap-8">
                 <a href="" class="hover:underline">Доставка</a>
-                <a href="" class="hover:underline">🎁Подарочный сертификат</a>
+                <a href="" class="flex gap-2 hover:underline">
+                    <img src="{{ asset('certificate.svg') }}" alt="">
+                    <span>Подарочный сертификат</span>
+                </a>
                 <a href="" class="hover:underline">Обмен и возврат</a>
                 <a href="" class="hover:underline">Контакты</a>
             </nav>
@@ -32,13 +35,15 @@
 
 <div class="px-12">
     <div class="flex justify-between py-4">
-        <img src="{{asset("sbershop.png")}}" alt="logo">
+        <a href="">
+            <img src="{{ asset('sbershop.svg') }}" alt="logo">
+        </a>
         <div class="flex items-center gap-6">
             <a href="">
-                <img src="{{asset("loopa.png")}}" alt="Лупа">
+                <img src="{{ asset("magnifier.png") }}" alt="magnifier">
             </a>
             <a href="">
-                <img src="{{asset("cart.png")}}" alt="Корзина">
+                <img src="{{ asset("cart.png") }}" alt="cart">
             </a>
         </div>
     </div>
@@ -49,35 +54,38 @@
         <div class="flex flex-col justify-between ml-10">
             <nav class="flex flex-col font-medium gap-2">
                 <div class="flex">
-                    <img src="{{asset("point.png")}}" class="mr-2 absolute left-14" alt="point">
+                    <img src="{{ asset("point.png") }}" class="mr-2 absolute left-14" alt="point">
                     <a href="" class="hover:underline flex items-center text-[#642D90]">Коллекции</a>
                 </div>
                 <div class="flex">
-                    <img src="{{asset("point.png")}}" class="mr-2 absolute left-14 hidden" alt="point">
+                    <img src="{{ asset("point.png") }}" class="mr-2 absolute left-14 hidden" alt="point">
                     <a href="" class="hover:underline flex items-center">Гаджеты</a>
                 </div>
                 <div class="flex">
-                    <img src="{{asset("point.png")}}" class="mr-2 absolute left-14 hidden" alt="point">
+                    <img src="{{ asset("point.png") }}" class="mr-2 absolute left-14 hidden" alt="point">
                     <a href="" class="hover:underline flex items-center">Одежда</a>
                 </div>
                 <div class="flex">
-                    <img src="{{asset("point.png")}}" class="mr-2 absolute left-14 hidden" alt="point">
+                    <img src="{{ asset("point.png") }}" class="mr-2 absolute left-14 hidden" alt="point">
                     <a href="" class="hover:underline flex items-center">Аксессуары</a>
                 </div>
                 <div class="flex">
-                    <img src="{{asset("point.png")}}" class="mr-2 absolute left-14 hidden" alt="point">
+                    <img src="{{ asset("point.png") }}" class="mr-2 absolute left-14 hidden" alt="point">
                     <a href="" class="hover:underline flex items-center">Новое</a>
                 </div>
                 <div class="flex">
-                    <img src="{{asset("point.png")}}" class="mr-2 absolute left-14 hidden" alt="point">
+                    <img src="{{ asset("point.png") }}" class="mr-2 absolute left-14 hidden" alt="point">
                     <a href="" class="hover:underline flex items-center text-red-500">% Sale</a>
                 </div>
             </nav>
             <div class="mb-14">
-                <h2 class="flex flex-col uppercase font-bold text-8xl"><span class="gradient-text">Яркая</span><span class="text-[#7EABFF]">новинка</span></h2>
+                <h2 class="flex flex-col uppercase font-bold text-8xl"><span class="gradient-text">Яркая</span><span
+                        class="text-[#7EABFF]">новинка</span></h2>
                 <h4 class="text-lg text-[#7EABFF] tracking-wider mt-8">Спорт-шик в новом формате:<br>
                     коллекция актуальных костюмов от Сбер</h4>
-                <button class="rounded-full text-white bg-gradient-to-r from-[#7EABFF] to-[#A3EE00] my-14 py-3 px-16">Купить</button>
+                <button class="rounded-full text-white bg-gradient-to-r from-[#7EABFF] to-[#A3EE00] my-14 py-3 px-16">
+                    Купить
+                </button>
                 <div class="flex gap-4">
                     <div class="bg-[#22A038] rounded-full py-1 px-5"></div>
                     <div class="bg-white rounded-full p-1"></div>
@@ -109,12 +117,18 @@
     </div>
 
     <div class="mt-10">
-        <img src="{{ asset('banner.png') }}" alt="">
+        <a href="">
+            <img src="{{ asset('banner.png') }}" alt="banner">
+        </a>
     </div>
 
     <x-section-header icon="lightning.svg" title="Товар недели"/>
-    <x-weekly-product />
+    <x-weekly-product/>
 </div>
+
+<div class="mb-10 bg-zinc-200 h-[1px] container mx-auto max-w-7xl"></div>
+
+<x-footer/>
 
 </body>
 </html>

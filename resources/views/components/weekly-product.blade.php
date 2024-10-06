@@ -1,11 +1,11 @@
-<div class="flex flex-wrap px-28 mt-9">
+<div class="flex flex-wrap px-28 my-10">
     <div class="w-1/2">
         <img src="{{ asset('week_card.png') }}" alt="weekly product">
     </div>
     <div class="w-1/2">
         <div class="flex flex-col">
             <p class="text-xl mb-2">Коллекция <span class="text-green-600 text-xl">СБЕР 1841</span></p>
-            <h3 class="font-bold text-2xl mb-3">Ежедневник Spark 1841</h3>
+            <h3 class="font-bold text-2xl mb-5">Ежедневник Spark 1841</h3>
             <p class="text-xl mb-3">Стильный классический ежедневник из коллекции «1841»!</p>
             <p class="text-xl">Недатированный классический ежедневник с гибкой матовой обложкой имеет максимально минималистичный
                 дизайн. Покрытие ежедневника - Soft Touch - матовое, немного припудренное, не блестит. Обложка, не
