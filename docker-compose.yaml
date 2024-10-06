@@ -33,7 +33,7 @@ services:
       context: dockerfiles
       dockerfile: composer.Dockerfile
     volumes:
-      - db_data:/var/www/laravel
+      - ./:/var/www/laravel
 
   artisan:
     build:
